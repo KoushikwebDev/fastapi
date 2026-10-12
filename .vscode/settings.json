@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/fastapi-auth/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/fastapi-auth"
+  ],
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/fastapi-auth"
+  ]
+}

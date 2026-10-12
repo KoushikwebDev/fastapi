@@ -1,0 +1,7 @@
+{
+  "venvPath": "./fastapi-auth",
+  "venv": ".venv",
+  "extraPaths": [
+    "./fastapi-auth"
+  ]
+}
