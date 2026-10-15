@@ -12,6 +12,7 @@ class User(BaseModel):
             raise ValueError('Username must be at least 3 characters long')
         return value
     
+    # it will run once all the fields are validated
     @model_validator(mode='after')
     def validate_model(cls, model):
         if model.password != model.confirm_password:
@@ -24,6 +25,7 @@ class Product(BaseModel):
     price : float
     quantity : int
 
+    # here this total_price field is calculating dynamically at runtime
     @computed_field
     @property
     def total_price(self):
